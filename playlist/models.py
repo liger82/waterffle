@@ -24,4 +24,5 @@ class Music(models.Model):
 class Playlist(models.Model):
     user_id = models.CharField(max_length=10) # ex) uid0000001
     track_id = models.ForeignKey(Music, on_delete=models.CASCADE) 
-    register_date = models.DateTimeField(auto_now_add=True)
+    # register_date = models.DateTimeField(auto_now_add=True)
+    num_listen = models.IntegerField() # 재생된 횟수

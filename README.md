@@ -120,7 +120,11 @@ waterffle=# \dt
  public | django_content_type        | table | ok
  public | django_migrations          | table | ok
  public | django_session             | table | ok
-(10 rows)
+ public | playlist_genre             | table | ok
+ public | playlist_music             | table | ok
+ public | playlist_music_genres      | table | ok
+ public | playlist_playlist          | table | ok
+(14 rows)
 
 ```
 
