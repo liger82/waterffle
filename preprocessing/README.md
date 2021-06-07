@@ -20,4 +20,4 @@ The following notebooks, scripts, and modules have been developed for preprocess
 
 - [`dimension_reduction_and_clustering.ipynb`]: shows how to load the datasets and test dimensionality reduction, clustering.
 
-[`usage.ipynb`]: dimension_reduction_and_clustering.ipynb
+[`dimension_reduction_and_clustering.ipynb`]: dimension_reduction_and_clustering.ipynb
