@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from playlist.views import PlaylistView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', PlaylistView.as_view(), name='playlist'),
+    # path('playlist/add_song/', ),
+    # path('playlist/remove_song/'),  
+    # path('playlist/wattefle_on/'),  
 ]
