@@ -21,6 +21,7 @@ class Music(models.Model):
     bit_rate = models.FloatField()
     # 한 곡의 genre는 여러 개일 수 있음. 해당 장르는 다른 곡에서도 분류될 수 있다.
     genres = ManyToManyField(Genre)
+    # 차원축소한 값(for clustering)
     features = ArrayField(models.FloatField())
 
     def __str__(self):
