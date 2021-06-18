@@ -3,9 +3,6 @@ import pickle
 import torch
 from tqdm import tqdm
 
-fma_dir_path = '/home/super/database/fma/data/fma_small'
-pe_data_path = './poly_encoder_data'
-
 def set_6dec(track_id):
 	if len(track_id) == 6:
 		return track_id
@@ -50,5 +47,3 @@ def load_poly_encoder_dataset():
 	print('next : {}'.format(len(next_mfcc_set)))
 	
 	return labels, now_mfcc_set, next_mfcc_set
-
-load_poly_encoder_dataset()
