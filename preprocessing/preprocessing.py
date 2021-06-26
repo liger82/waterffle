@@ -16,7 +16,7 @@ def load_poly_encoder_dataset():
     # poly_encoder_dataset saved by pickle
     # format : [label, now_track_id, next_track_id]
     # load raw mfcc data by poly_encoder_dataset
-	with open('poly_encoder_dataset.pkl', 'rb') as f:
+	with open('poly_encoder_dataset_b32.pkl', 'rb') as f:
 	    pe_dataset = pickle.load(f)
 
 	fma_path = '/home/super/database/fma/data/fma_small/'
@@ -25,6 +25,8 @@ def load_poly_encoder_dataset():
 	now_mfcc_set = []
 	next_mfcc_set = []
 	for i, pe in enumerate(tqdm(pe_dataset)):
+		if i > 100:
+			break
 		now_track_id = set_6dec(pe[1])
 		next_track_id = set_6dec(pe[-1])
 	
